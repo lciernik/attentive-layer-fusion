@@ -1,0 +1,3 @@
+dinov2-vit-small-p14_at@norm
+vit_small_patch16_224_at@norm
+OpenCLIP_ViT-B-32_openai_at@visual

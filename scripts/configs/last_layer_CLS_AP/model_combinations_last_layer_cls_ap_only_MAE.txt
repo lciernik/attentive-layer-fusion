@@ -1,0 +1,2 @@
+mae-vit-base-p16_cls@norm;mae-vit-base-p16_ap@norm
+mae-vit-large-p16_cls@norm;mae-vit-large-p16_ap@norm

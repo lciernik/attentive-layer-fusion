@@ -1,0 +1,2 @@
+dinov2-vit-base-p14_cls@norm
+OpenCLIP_ViT-B-16_openai_cls@visual

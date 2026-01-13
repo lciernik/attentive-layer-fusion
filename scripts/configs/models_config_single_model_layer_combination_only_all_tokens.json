@@ -1,0 +1,139 @@
+{
+    "vit_base_patch16_224_at": {
+        "model_name": "vit_base_patch16_224.augreg2_in21k_ft_in1k",
+        "source": "timm",
+        "model_parameters": {
+            "token_extraction": "all_tokens"
+        },
+        "module_names": [
+            "blocks.0.norm2",
+            "blocks.1.norm2",
+            "blocks.2.norm2",
+            "blocks.3.norm2",
+            "blocks.4.norm2",
+            "blocks.5.norm2",
+            "blocks.6.norm2",
+            "blocks.7.norm2",
+            "blocks.8.norm2",
+            "blocks.9.norm2",
+            "blocks.10.norm2",
+            "blocks.11.norm2"
+        ],
+        "objective": "Supervised",
+        "dataset": "ImageNet21k + finetuned on ImageNet1k",
+        "architecture_class": "Transformer",
+        "architecture": "ViT",
+        "embedding_dim": 768,
+        "alignment": null,
+        "dataset_class": "ImageNet21k + finetuned on ImageNet1k",
+        "size": 86567656,
+        "size_fmt": "86.6M",
+        "size_class": "small",
+        "set_length": 197
+    },
+    "dinov2-vit-base-p14_at": {
+        "model_name": "dinov2-vit-base-p14",
+        "source": "ssl",
+        "model_parameters": {
+            "token_extraction": "all_tokens"
+        },
+        "module_names": [
+            "blocks.0.norm2",
+            "blocks.1.norm2",
+            "blocks.2.norm2",
+            "blocks.3.norm2",
+            "blocks.4.norm2",
+            "blocks.5.norm2",
+            "blocks.6.norm2",
+            "blocks.7.norm2",
+            "blocks.8.norm2",
+            "blocks.9.norm2",
+            "blocks.10.norm2",
+            "blocks.11.norm2"
+        ],
+        "objective": "Self-Supervised",
+        "dataset": "LVD-142M",
+        "architecture_class": "Transformer",
+        "architecture": "ViT",
+        "alignment": null,
+        "dataset_class": "Large",
+        "embedding_dim": 768,
+        "size": 86580480,
+        "size_fmt": "86.6M",
+        "size_class": "small",
+        "set_length": 257
+    },
+    "OpenCLIP_ViT-B-16_openai_at": {
+        "model_name": "OpenCLIP",
+        "source": "custom",
+        "model_parameters": {
+            "variant": "ViT-B-16",
+            "dataset": "openai",
+            "vision_cfg": {
+                "image_size": 224,
+                "layers": 12,
+                "width": 768,
+                "patch_size": 16,
+                "pool_type": "none"
+            },
+            "token_extraction": "all_tokens"
+        },
+        "module_names": [
+            "visual.transformer.resblocks.0.ln_2",
+            "visual.transformer.resblocks.1.ln_2",
+            "visual.transformer.resblocks.2.ln_2",
+            "visual.transformer.resblocks.3.ln_2",
+            "visual.transformer.resblocks.4.ln_2",
+            "visual.transformer.resblocks.5.ln_2",
+            "visual.transformer.resblocks.6.ln_2",
+            "visual.transformer.resblocks.7.ln_2",
+            "visual.transformer.resblocks.8.ln_2",
+            "visual.transformer.resblocks.9.ln_2",
+            "visual.transformer.resblocks.10.ln_2",
+            "visual.transformer.resblocks.11.ln_2"
+        ],
+        "objective": "Image-Text",
+        "dataset": "WIT-400M",
+        "architecture_class": "Transformer",
+        "architecture": "ViT",
+        "embedding_dim": 512,
+        "alignment": null,
+        "dataset_class": "Large",
+        "size": 149620737,
+        "size_fmt": "149.6M",
+        "size_class": "medium",
+        "set_length": 197
+    },
+    "mae-vit-base-p16_at": {
+        "model_name": "mae-vit-base-p16",
+        "source": "ssl",
+        "model_parameters": {
+            "token_extraction": "all_tokens"
+        },
+        "module_names": [
+            "blocks.0.norm2",
+            "blocks.1.norm2",
+            "blocks.2.norm2",
+            "blocks.3.norm2",
+            "blocks.4.norm2",
+            "blocks.5.norm2",
+            "blocks.6.norm2",
+            "blocks.7.norm2",
+            "blocks.8.norm2",
+            "blocks.9.norm2",
+            "blocks.10.norm2",
+            "blocks.11.norm2"
+        ],
+        "objective": "Self-Supervised",
+        "dataset": "ImageNet1k",
+        "architecture_class": "Transformer",
+        "architecture": "ViT",
+        "embedding_dim": 768,
+        "alignment": null,
+        "dataset_class": "ImageNet1k",
+        "size": 86388480,
+        "size_fmt": "86.4M",
+        "size_class": "small",
+        "set_length": 197
+    }
+}

@@ -1,0 +1,4 @@
+wds/fer2013
+wds/gtsrb
+wds/vtab/cifar100
+wds/vtab/eurosat

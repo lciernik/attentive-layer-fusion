@@ -1,0 +1,4 @@
+vit_base_patch16_224_at@blocks.3.norm2;vit_base_patch16_224_at@blocks.6.norm2;vit_base_patch16_224_at@blocks.9.norm2;vit_base_patch16_224_at@norm
+dinov2-vit-base-p14_at@blocks.3.norm2;dinov2-vit-base-p14_at@blocks.6.norm2;dinov2-vit-base-p14_at@blocks.9.norm2;dinov2-vit-base-p14_at@norm
+OpenCLIP_ViT-B-16_openai_at@visual.transformer.resblocks.3.ln_2;OpenCLIP_ViT-B-16_openai_at@visual.transformer.resblocks.6.ln_2;OpenCLIP_ViT-B-16_openai_at@visual.transformer.resblocks.9.ln_2;OpenCLIP_ViT-B-16_openai_at@visual
+mae-vit-base-p16_at@blocks.3.norm2;mae-vit-base-p16_at@blocks.6.norm2;mae-vit-base-p16_at@blocks.9.norm2;mae-vit-base-p16_at@norm

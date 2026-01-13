@@ -1,0 +1,170 @@
+{
+  "wds/fer2013": {
+    "domain": "Structured",
+    "name": "FER2013",
+    "nr_train_samples": 28709,
+    "nr_classes": 7
+  },
+  "wds/voc2007": {
+    "domain": "Natural (multi-domain)",
+    "name": "PASCAL VOC 2007",
+    "nr_train_samples": 7844,
+    "nr_classes": 20
+  },
+  "wds/cars": {
+    "domain": "Natural (single-domain)",
+    "name": "Stanford Cars",
+    "nr_train_samples": 8144,
+    "nr_classes": 196
+  },
+  "wds/fgvc_aircraft": {
+    "domain": "Natural (single-domain)",
+    "name": "FGVC Aircraft",
+    "nr_train_samples": 3334,
+    "nr_classes": 100
+  },
+  "wds/stl10": {
+    "domain": "Natural (multi-domain)",
+    "name": "STL-10",
+    "nr_train_samples": 5000,
+    "nr_classes": 10
+  },
+  "wds/gtsrb": {
+    "domain": "Natural (single-domain)",
+    "name": "GTSRB",
+    "nr_train_samples": 26640,
+    "nr_classes": 43
+  },
+  "wds/country211": {
+    "domain": "Natural (multi-domain)",
+    "name": "Country-211",
+    "nr_train_samples": 31650,
+    "nr_classes": 211
+  },
+  "wds/vtab/caltech101": {
+    "domain": "Natural (multi-domain)",
+    "name": "Caltech-101",
+    "nr_train_samples": 2753,
+    "nr_classes": 102
+  },
+  "wds/vtab/cifar10": {
+    "domain": "Natural (multi-domain)",
+    "name": "CIFAR-10",
+    "nr_train_samples": 45000,
+    "nr_classes": 10
+  },
+  "wds/vtab/cifar100": {
+    "domain": "Natural (multi-domain)",
+    "name": "CIFAR-100",
+    "nr_train_samples": 45000,
+    "nr_classes": 100
+  },
+  "wds/vtab/diabetic_retinopathy": {
+    "domain": "Specialized",
+    "name": "Diabetic Retinopathy",
+    "nr_train_samples": 35126,
+    "nr_classes": 5
+  },
+  "wds/vtab/dmlab": {
+    "domain": "Structured",
+    "name": "Dmlab",
+    "nr_train_samples": 65550,
+    "nr_classes": 6
+  },
+  "wds/vtab/dtd": {
+    "domain": "Structured",
+    "name": "DTD",
+    "nr_train_samples": 1880,
+    "nr_classes": 47
+  },
+  "wds/vtab/eurosat": {
+    "domain": "Specialized",
+    "name": "EuroSAT",
+    "nr_train_samples": 16200,
+    "nr_classes": 10
+  },
+  "wds/vtab/flowers": {
+    "domain": "Natural (single-domain)",
+    "name": "Flowers",
+    "nr_train_samples": 1020,
+    "nr_classes": 102
+  },
+  "wds/vtab/pets": {
+    "domain": "Natural (single-domain)",
+    "name": "Pets",
+    "nr_train_samples": 2944,
+    "nr_classes": 37
+  },
+  "wds/vtab/pcam": {
+    "domain": "Specialized",
+    "name": "PCAM",
+    "nr_train_samples": 262144,
+    "nr_classes": 2
+  },
+  "wds/vtab/resisc45": {
+    "domain": "Specialized",
+    "name": "RESISC45",
+    "nr_train_samples": 18900,
+    "nr_classes": 45
+  },
+  "wds/vtab/svhn": {
+    "domain": "Natural (single-domain)",
+    "name": "SVHN",
+    "nr_train_samples": 65931,
+    "nr_classes": 10
+  },
+  "cifar100-coarse": {
+    "domain": "Natural (multi-domain)",
+    "name": "CIFAR-100 (coarse)",
+    "nr_train_samples": null,
+    "nr_classes": null
+  },
+  "entity13": {
+    "domain": "Natural (multi-domain)",
+    "name": "Entity-13",
+    "nr_train_samples": null,
+    "nr_classes": null
+  },
+  "entity30": {
+    "domain": "Natural (multi-domain)",
+    "name": "Entity-30",
+    "nr_train_samples": 154263,
+    "nr_classes": 30
+  },
+  "living17": {
+    "domain": "Natural (multi-domain)",
+    "name": "Living-17",
+    "nr_train_samples": 44200,
+    "nr_classes": 17
+  },
+  "nonliving26": {
+    "domain": "Natural (multi-domain)",
+    "name": "Nonliving-26",
+    "nr_train_samples": 65762,
+    "nr_classes": 26
+  },
+  "imagenet_torchvision": {
+    "domain": "Natural (multi-domain)",
+    "name": "ImageNet-1k",
+    "nr_train_samples": 1281167,
+    "nr_classes": 1000
+  },
+  "wds/imagenet1k": {
+    "domain": "Natural (multi-domain)",
+    "name": "ImageNet-1k",
+    "nr_train_samples": 1281167,
+    "nr_classes": 1000
+  },
+  "imagenet-subset-10k": {
+    "domain": "Natural (multi-domain)",
+    "name": "ImageNet-1k",
+    "nr_train_samples": 10000,
+    "nr_classes": 1000
+  },
+  "imagenet-subset-50k": {
+    "domain": "Natural (multi-domain)",
+    "name": "ImageNet-1k",
+    "nr_train_samples": 50000,
+    "nr_classes": 1000
+  }
+}

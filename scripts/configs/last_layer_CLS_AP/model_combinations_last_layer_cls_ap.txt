@@ -1,0 +1,9 @@
+OpenCLIP_ViT-B-16_openai_cls@visual;OpenCLIP_ViT-B-16_openai_ap@visual
+OpenCLIP_ViT-B-32_openai_cls@visual;OpenCLIP_ViT-B-32_openai_ap@visual
+OpenCLIP_ViT-L-14_openai_cls@visual;OpenCLIP_ViT-L-14_openai_ap@visual
+dinov2-vit-base-p14_cls@norm;dinov2-vit-base-p14_ap@norm
+dinov2-vit-large-p14_cls@norm;dinov2-vit-large-p14_ap@norm
+dinov2-vit-small-p14_cls@norm;dinov2-vit-small-p14_ap@norm
+vit_base_patch16_224_cls@norm;vit_base_patch16_224_ap@norm
+vit_large_patch16_224_cls@norm;vit_large_patch16_224_ap@norm
+vit_small_patch16_224_cls@norm;vit_small_patch16_224_ap@norm

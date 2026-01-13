@@ -1,0 +1,10 @@
+vit_small_patch16_224_at@norm
+OpenCLIP_ViT-B-32_openai_at@visual
+dinov2-vit-base-p14_at@norm
+vit_base_patch16_224_at@norm
+OpenCLIP_ViT-B-16_openai_at@visual
+mae-vit-base-p16_at@norm
+dinov2-vit-large-p14_at@norm
+vit_large_patch16_224_at@norm
+OpenCLIP_ViT-L-14_openai_at@visual
+mae-vit-large-p16_at@norm
