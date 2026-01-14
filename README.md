@@ -40,26 +40,26 @@ This repository contains the code for the preprint paper "Beyond the Final Layer
 ### 1. Environment Setup
 
 > [!NOTE]
-> The experiments of this paper have been run on a SLURM compute cluster with Apptainer. Therefore, the following instructions are for running the experiments on this setup. 
+> Experiments were conducted on a SLURM cluster with Apptainer. Instructions below are tailored for this setup.
 
-We provide a docker image as well as an Apptainer container that contains all the necessary dependencies to rerun the experiments (on a SLURM).
-- **Docker image**: `docker://ghcr.io/lciernik/attentive-layer-fusion:latest`
-- **Apptainer container**: `oras://ghcr.io/lciernik/attentive-layer-fusion:latest-sif` 
+We provide pre-built containers with all dependencies:
+- **Docker**: `docker://ghcr.io/lciernik/attentive-layer-fusion:latest`
+- **Apptainer**: `oras://ghcr.io/lciernik/attentive-layer-fusion:latest-sif`
 
 ### 2. Project Structure
 
-All the project data (datasets, features, model checkpoints, etc.) is stored in the **project root directory**, defined in `scripts/project_location.py`. Please change it to your own project root directory and add the path to the container/image.
+Configure your project root directory in [scripts/project_location.py](scripts/project_location.py):
 
 ```
 [PROJECT_ROOT]/
-├── datasets/                     # Downloaded datasets
-├── features/                     # Extracted features
-├── models/                       # Trained probe models
-├── model_similarities/           # Model similarity matrices
-└── results/                      # Experimental results
+├── datasets/              # Downloaded datasets
+├── features/              # Extracted features
+├── models/                # Trained probe models
+├── model_similarities/    # Model similarity matrices
+└── results/               # Experimental results
 ```
 
-You can build the project structure by running the script `scripts/project_location.py`.
+Build the directory structure: `python scripts/project_location.py`
 
 ## Downloading the Datasets from Hugging Face
 
@@ -83,20 +83,27 @@ Ensure to use `[BASE_PATH_PROJECT]/datasets` as the target directory. Please fol
 
 To run any task, you must be in the container and in the repository root directory, i.e., at `PATH_TO_REPO`.
 
-- **Feature extraction**:
-  - General (entire datasets): `python scripts/feature_extraction.py`
-  - ImageNet subset feature extraction:
-    1. Create subset indices: `python scripts/generate_imagenet_subset_indices.py`
-    2. Extract features: `python scripts/in_subset_extraction.py`
-  - Create subset indices:
-    - Run notebook `notebooks/check_wds_sizes_n_get_subsets.ipynb` to check the sizes of the datasets and get the subset indices.
-- **Single model evaluation**: `python scripts/single_model_evaluation.py`
-- **Combined representations evaluation**:
-  - Linear probe: `python scripts/combined_models_evaluation_linear_probe.py`
-  - Attentive probe: `python scripts/combined_models_evaluation_attn_probe.py`
+- **Feature extraction**: All datasets (entire dataset) `python scripts/feature_extraction.py`
+
+- **Model evaluation**:
+  - Single layer evaluation
+    - All datasets on last layer: `python scripts/single_model_evaluation.py`
+    - On appendix datasets and all layers: `python scripts/single_model_evaluation_all_intermediate_layers.py`
+  - Linear probe (multi-layer) 
+    - on pre-extracted features: `python scripts/combined_models_evaluation_linear_probe_large_experiments.py`
+  - Attentive probe (multi-layer or all tokens last layer) 
+    - on pre-extracted features: `python scripts/combined_models_evaluation_attn_probe_large_experiments.py`
+    - end-to-end: `python scripts/end_2_end_eval_attentive_probe_frozen_backbone.py`
+  - Fine-tuning (classic with linear classification head on top)
+    - end-to-end: `python scripts/- end-to-end: `python scripts/end_2_end_eval_linear_probe_finetuning.py`.py`
+  - Representationals similarity computation: `python scripts/distance_matrix_computation_all_layers.py`
+
+> [!TIP]
+> Run experiments on a single machine using commands in the `job_cmd` variable within each script.
 
 > [!NOTE]
-> One can also run the experiments on a **single machine** by using the commands stored as strings in the variable <code>job_cmd</code> in the abovementioned scripts.
+> The indicated scripts are to reproduce our main experiments. These can be used as a template to run e.g., end-to-end multi-layer attentive probe training on a single dataset for a specific model by modifying the respective script.
+
 
 ### Visualizations
 
@@ -108,10 +115,23 @@ Before you can start reproducing the visualizations, you need to have the result
 - **Visualizing the results**:
   - Run the notebooks in `notebooks/main_section` to visualize the results.
 
-## Acknowledgments
-
-TODO
+## Related Work
+This project builds upon or uses heavily the following repositories and works:
+- [ThingsVision](https://github.com/ViCCo-Group/thingsvision) for feature extraction and end-to-end model evaluation
+- [similarity_consistency](https://github.com/lciernik/similarity_consistency) repository
 
 ## Citation
 
-TODO
+If you find this work interesting or useful in your research, please cite our paper:
+
+```
+```
+
+### Thank you
+
+If you have any feedback, questions, or ideas, please feel free to raise an issue in this repository. 
+Alternatively, you can reach out to us directly via email for more in-depth discussions or suggestions. 
+
+📧 Contact us: ciernik[at]tu-berlin.de or m.morik[at]tu-berlin.de
+
+Thank you for your interest and support!
