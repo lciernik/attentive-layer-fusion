@@ -115,7 +115,7 @@ Before you can start reproducing the visualizations, you need to have the result
 - **Visualizing the results**:
   - Run the notebooks in `notebooks/main_section` to visualize the results.
 
-## Related Work
+## Acknowledgments
 This project builds upon or uses heavily the following repositories and works:
 - [ThingsVision](https://github.com/ViCCo-Group/thingsvision) for feature extraction and end-to-end model evaluation
 - [similarity_consistency](https://github.com/lciernik/similarity_consistency) repository
