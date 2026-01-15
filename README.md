@@ -4,7 +4,7 @@
   <img src="data/figure_1.png" alt="Overview of Attentive Multi-Layer Fusion for Vision Transformers" width="400">
 </div>
 
-This repository contains the code for the preprint paper "Beyond the Final Layer: Attentive Multi-Layer Fusion for Vision Transformers" [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
+This repository contains the code for the preprint paper "Beyond the Final Layer: Attentive Multi-Layer Fusion for Vision Transformers" [arXiv:2601.09322](https://arxiv.org/abs/2601.09322)
 
 ## Table of Contents
 
@@ -122,9 +122,17 @@ This project builds upon or uses heavily the following repositories and works:
 
 ## Citation
 
-If you find this work interesting or useful in your research, please cite our paper:
-
+If you find this work interesting or useful in your research, please cite our preprint:
 ```
+@misc{2026finallayerattentivemultilayer,
+      title={Beyond the final layer: Attentive multilayer fusion for vision transformers}, 
+      author={Laure Ciernik and Marco Morik and Lukas Thede and Luca Eyring and Shinichi Nakajima and Zeynep Akata and Lukas Muttenthaler},
+      year={2026},
+      eprint={2601.09322},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.09322}, 
+}
 ```
 
 ### Thank you
