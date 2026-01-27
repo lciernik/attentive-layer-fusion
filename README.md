@@ -1,10 +1,10 @@
-# Beyond the Final Layer: Attentive Multi-Layer Fusion for Vision Transformers
+# Attentive Multi-Layer Fusion for Vision Transformers
 
 <div align="center">
   <img src="data/figure_1.png" alt="Overview of Attentive Multi-Layer Fusion for Vision Transformers" width="400">
 </div>
 
-This repository contains the code for the preprint paper "Beyond the Final Layer: Attentive Multi-Layer Fusion for Vision Transformers" [arXiv:2601.09322](https://arxiv.org/abs/2601.09322)
+This repository contains the code for the ICML submission "Attentive Multi-Layer Fusion for Vision Transformers."
 
 ## Table of Contents
 
@@ -40,11 +40,7 @@ This repository contains the code for the preprint paper "Beyond the Final Layer
 ### 1. Environment Setup
 
 > [!NOTE]
-> Experiments were conducted on a SLURM cluster with Apptainer. Instructions below are tailored for this setup.
-
-We provide pre-built containers with all dependencies:
-- **Docker**: `docker://ghcr.io/lciernik/attentive-layer-fusion:latest`
-- **Apptainer**: `oras://ghcr.io/lciernik/attentive-layer-fusion:latest-sif`
+> The experiments of this paper have been run on a SLURM compute cluster with Apptainer. Therefore, the following instructions are for running the experiments on this setup. **Upon acceptance, we make the docker image/apptainer container available on GitHub Container Registry, and you can simply run the experiments by pulling the image/container.**
 
 ### 2. Project Structure
 
@@ -70,7 +66,7 @@ Ensure to use `[BASE_PATH_PROJECT]/datasets` as the target directory. Please fol
 ## Running Experiments and Reproducing the Plots
 
 > [!TIP]
-> If you only want to reproduce the visualizations of the experiments, use the pre-aggregated results in <code>data/results/aggregated/</code> and run the notebooks in <code>notebooks/main_section</code>.
+> If you only want to reproduce the visualizations of the experiments, use the **pre-aggregated results in <code>data/results/aggregated/</code> and run the notebooks in <code>notebooks/main_section</code>**.
 
 ### Before You Start (on a SLURM Cluster with Apptainer)
 
@@ -107,7 +103,7 @@ To run any task, you must be in the container and in the repository root directo
 
 ### Visualizations
 
-Before you can start reproducing the visualizations, you need to have the results of the experiments and aggregate them.
+Before you can start reproducing the visualizations, you need the results of the experiments and need to aggregate them.
 
 - **Aggregating the results**:
   - Run notebook `notebooks/aggregate_results.ipynb` to aggregate the results.
@@ -116,30 +112,7 @@ Before you can start reproducing the visualizations, you need to have the result
   - Run the notebooks in `notebooks/main_section` to visualize the results.
 
 ## Acknowledgments
-This project builds upon or uses heavily the following repositories and works:
-- [ThingsVision](https://github.com/ViCCo-Group/thingsvision) for feature extraction and end-to-end model evaluation
-- [similarity_consistency](https://github.com/lciernik/similarity_consistency) repository
+Will be added upon acceptance.
 
 ## Citation
-
-If you find this work interesting or useful in your research, please cite our preprint:
-```
-@misc{2026finallayerattentivemultilayer,
-      title={Beyond the final layer: Attentive multilayer fusion for vision transformers}, 
-      author={Laure Ciernik and Marco Morik and Lukas Thede and Luca Eyring and Shinichi Nakajima and Zeynep Akata and Lukas Muttenthaler},
-      year={2026},
-      eprint={2601.09322},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2601.09322}, 
-}
-```
-
-### Thank you
-
-If you have any feedback, questions, or ideas, please feel free to raise an issue in this repository. 
-Alternatively, you can reach out to us directly via email for more in-depth discussions or suggestions. 
-
-📧 Contact us: ciernik[at]tu-berlin.de or m.morik[at]tu-berlin.de
-
-Thank you for your interest and support!
+Will be added upon acceptance.
