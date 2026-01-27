@@ -108,7 +108,7 @@ def plot_scatter(df, title, ds, sim_met_col, sim_val_col):
     return g.fig
 
 
-def save_or_show(fig, path, save):
+def save_or_show(fig, path, save, show_path=False):
     if save == "both":
         fig.savefig(path, dpi=600, bbox_inches="tight")
         print(f"stored image.")

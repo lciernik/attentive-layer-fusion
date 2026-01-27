@@ -12,7 +12,7 @@ ADDITIONAL_MOUNTS_wo_copy = [
 ]
 
 ## DEFINE BASEPATHS
-BASE_PATH_PROJECT = "/home/space/rep2rep"
+BASE_PATH_PROJECT = ".." # TODO: set appropriate path
 SUBSTRING = ".." # TODO: set appropriate string
 
 ### DEFINE SUBFOLDERS
