@@ -1,10 +1,10 @@
-# Beyond the Final Layer: Attentive Multi-Layer Fusion for Vision Transformers
+# Attentive Multi-Layer Fusion for Vision Transformers
 
 <div align="center">
   <img src="data/figure_1.png" alt="Overview of Attentive Multi-Layer Fusion for Vision Transformers" width="400">
 </div>
 
-This repository contains the code for the preprint paper "Beyond the Final Layer: Attentive Multi-Layer Fusion for Vision Transformers" [arXiv:2601.09322](https://arxiv.org/abs/2601.09322)
+This repository contains the code for the preprint paper "Attentive Multi-Layer Fusion for Vision Transformers" [arXiv:2601.09322](https://arxiv.org/abs/2601.09322)
 
 ## Table of Contents
 
